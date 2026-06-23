@@ -42,7 +42,6 @@ Currently just building, learning more about C/C++, and experimenting with thing
 
 ## projects
 
-- [cromekk-website](https://github.com/cromekk/cromekk-website) — my personal website
 - [imgui-external-base](https://github.com/cromekk/imgui-external-base) — C++ / ImGui project base
 - [temporary-spoofer](https://github.com/cromekk/temporary-spoofer) — C project
 
