@@ -16,6 +16,15 @@ const DISCORD_API_URL = `https://api.lanyard.rest/v1/users/${DISCORD_USER_ID}`;
 const DISCORD_REFRESH_MS = 60 * 1000;
 const VIEWPORT_SAFE_GAP = 48;
 
+const USE_LANYARD_PRESENCE = false;
+const MANUAL_DISCORD_PRESENCE = {
+  status: "online",
+  profile: "Profile cromekk (@cromekk)",
+  title: "Building software",
+  detail: "Role Software Developer",
+  app: "</>",
+};
+
 const statusLabels = {
   online: "online on Discord",
   idle: "idle on Discord",
@@ -323,7 +332,34 @@ function renderActivity(data) {
   scheduleFitScale();
 }
 
+function renderManualPresence() {
+  setDiscordStatus(MANUAL_DISCORD_PRESENCE.status);
+
+  if (discordProfile) {
+    discordProfile.textContent = MANUAL_DISCORD_PRESENCE.profile;
+  }
+
+  if (activityTitle) {
+    activityTitle.textContent = MANUAL_DISCORD_PRESENCE.title;
+  }
+
+  if (activityDetail) {
+    activityDetail.textContent = MANUAL_DISCORD_PRESENCE.detail;
+  }
+
+  if (activityApp) {
+    activityApp.textContent = MANUAL_DISCORD_PRESENCE.app;
+  }
+
+  scheduleFitScale();
+}
+
 async function updateDiscordPresence() {
+  if (!USE_LANYARD_PRESENCE) {
+    renderManualPresence();
+    return;
+  }
+
   setDiscordStatus("offline", "checking Discord...");
 
   try {
