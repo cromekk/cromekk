@@ -15,9 +15,6 @@
   <a href="https://github.com/cromekk">
     <img src="https://img.shields.io/badge/github-cromekk-111?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-  <a href="https://discord.gg/aB78v26mgw">
-    <img src="https://img.shields.io/badge/discord-server-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
-  </a>
 </p>
 
 ---
@@ -63,6 +60,4 @@ Currently just building, learning more about C/C++, and experimenting with thing
   <a href="https://cromekk.com">website</a>
   ·
   <a href="https://github.com/cromekk">github</a>
-  ·
-  <a href="https://discord.gg/aB78v26mgw">discord</a>
 </p>
