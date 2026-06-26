@@ -43,7 +43,7 @@ Currently just building, learning more about C/C++, and experimenting with thing
 ## projects
 
 - [imgui-external-base](https://github.com/cromekk/imgui-external-base) — C++ / ImGui project base
-- [temporary-spoofer](https://github.com/cromekk/temporary-spoofer) — C project
+- [process-inspector](https://github.com/cromekk/process-inspector) — C++ / Process Inspector
 
 ---
 
